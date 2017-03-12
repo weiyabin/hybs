@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" href="../assets/dep/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/src/less/iconfont/iconfont.css">
+</head>
+<body>
+	<div class="page">	
+		<nav id="header" class="header navbar navbar-fixed-top">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">
+		            <img alt="Brand" src="../assets/src/img/logo.png">
+		        </a>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>    &nbsp张某某</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                <div class="message">
+        	        <div class="tooltip-arrow message-arrow"></div>
+        	        <div class="message-inner">
+        	        	<ul class="nav nav-pills nav-switch">
+        	        	  <li role="presentation"><a href="#">消息</a></li>
+        	        	  <li role="presentation" class="active"><a href="#">提醒</a></li>
+        	        	</ul>
+        	        	<ul class="content">
+        	        		<li class="text-ellipsis"><a href="#">重要提醒，天气炎热，注意喝水；病毒肆意注意喝水；今天有雨，注意喝水</a></li>
+        	        		<li class="text-ellipsis"><a href="#">我就一句话，注意喝水</a></li>
+        	        		<li class="text-ellipsis"><a href="#">重要提醒，天气炎热，注意喝水；病毒肆意注意喝水；今天有雨，注意喝水</a></li>
+        	        		<li class="text-ellipsis"><a href="#">重要提醒，天气炎热，注意喝水；病毒肆意注意喝水；今天有雨，注意喝水</a></li>
+        	        	</ul>
+        	        	<a href="#" class="btn btn-default btn-more">查看更多</a>
+        	        </div>
+                </div>
+		        <li><a href="../login.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+		    </ul>
+		</nav>
+		<div id="content" class="content">
+			<nav id="menu" class="navbar-aside">
+				<div class="sidebar-wrapper">
+					<div class="sidebar-body">
+						<ul class="nav side-nav">
+							<li>
+								<a href="index.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">首页</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="index.html">消息提醒</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index1.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">选项卡</span></a>
+							</li>
+							<li>
+								<a href="index2.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">统计图</span></a>
+							</li>
+							<li>
+								<a href="index3.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表格</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="#">普通表格</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index4.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表单</span></a>
+							</li>
+							<li>
+								<a href="index5.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">弹出框</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="page-panel">
+				<div class="page-panel-inner">
+					<ol class="breadcrumb">
+					    <li><a href="#">用户分析</a></li>
+					    <li class="active">用户类别分析</li>
+					</ol>
+					<div id="table-list" class="container-fluid table-list">
+					    <div class="toolbar toolbar-top">
+					        <div class="pull-left">
+					        	<form class="form-inline form-search">
+					        		
+						        		<div class="form-group">
+						        			<label for="address" class="control-label">地址</label>
+						        			<select name="address" id="" class="form-control">
+						        				<option value="">全部</option>
+						        				<option value="0">杭州市</option>
+						        			</select>
+						        		</div>
+						        		<div class="form-group">
+						        			<label for="title" class="control-label">标题</label>
+						        			<select name="title" id="" class="form-control">
+						        				<option value="">全部</option>
+						        				<option value="0">信息名称一</option>
+						        				<option value="1">信息名称二</option>
+						        			</select>
+						        		</div>
+					        			<div class="form-group"><input type="text" name="keywords" class="form-control" placeholder="请输入名称" maxlength="50"></div>
+						        		<button type="button" class="btn btn-default btn-submit">搜索</button>
+						        		<button type="button" class="btn btn-default btn-reset">重置</button>
+        			        			<br><br>
+        				        		<div class="form-group">
+        				        			<label for="option" class="control-label">选项</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox" checked>
+        			        					<i class="icon icon-input"></i>选项一
+        			        				</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox">
+        			        					<i class="icon icon-input"></i>选项二
+        			        				</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox">
+        			        					<i class="icon icon-input"></i>选项三
+        			        				</label>
+        				        		</div>
+					        			<br><br>
+						        		<div class="form-group">
+						        			<label for="option" class="control-label">标题</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" checked value="1" name="labelType">
+					        					<i class="icon icon-input"></i>选项一
+					        				</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" value="2" name="labelType">
+					        					<i class="icon icon-input"></i>选项二
+					        				</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" value="3" name="labelType">
+					        					<i class="icon icon-input"></i>选项三
+					        				</label>
+						        		</div>
+					        	</form>
+					        </div>
+					        <div class="pull-right"></div>					        
+					    </div>
+					    <div class="split-block"></div>
+					    <div id="charts" style="width: 800px;height: 400px;"></div>
+					    <table class="table-data"></table>
+					    <div class="toolbar toolbar-bottom"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="dist/index.js"></script>
+</body>
+</html>
