@@ -1,0 +1,105 @@
+@import url(_reset.less);
+@import url(variables.less);
+@import url(common.less);
+
+.page {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) center no-repeat;
+	background-size: cover;
+	.option-bar {
+		width: 100%;
+		height: @topBarH;
+		line-height: 30px;
+		padding: 10px;
+		margin-top: 60px;
+		ul {
+			float: right;
+			li {
+				float: left;
+				margin-right: 15px;
+			}
+		}
+	}
+	.title {
+		height: 60px;
+		line-height: 60px;
+		width: 568px;
+		padding: 0 20px;
+		margin: auto;
+		background: #fff;
+		color: @blueColor;
+		border-bottom: 1px solid @splitColor;
+	}
+	.login-panel {
+		box-sizing: border-box;
+		width: 568px;
+		padding: 30px 114px;
+		margin: auto;
+		.input-group {
+			width: 340px;
+			height: 3px;
+			margin-top: 20px;
+			.input-code {
+				float: left;
+			    width: 196px;
+			    margin-right: 10px;
+			}
+			.change-code {
+				float: right;
+				height: 32px;
+				line-height: 32px;
+				text-align: right;
+			}
+			.btn-login {
+				width: 100%;
+				background-color: @blueColor;
+				color: #fff;
+			}
+			.btn-getCode {
+				width: 134px;
+				float: right;
+				background-color: @blueColor;
+				color: #fff;
+			}
+			.forget-password {
+				float: right;
+			}
+			.timing {
+				width: 134px;
+			}
+		}
+		.note {
+			font-size: @contentFontSize;
+			color: @contentColor;
+			line-height: 20px;
+			margin-bottom: -15px;
+		}
+		.steps {
+			li {
+				float: left;
+				a {
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					text-align: center;
+					border: 1px solid @weakerContentColor;
+					border-radius: 50px;
+				}
+			}
+			li:after
+			{
+				content:"————————";
+			}
+			li:last-child:after
+			{
+				content:"";
+			}
+		}
+	}
+	.register-panel {
+		background-color: #fff;
+	}
+}
