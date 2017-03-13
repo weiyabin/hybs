@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register</title>
+	<link rel="stylesheet" href="assets/dep/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="page">
+		<nav id="header" class="header navbar navbar-fixed-top">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">
+		            <img alt="Brand" src="../assets/src/img/logo.png">
+		        </a>
+		    </div>
+		</nav>
+		<div class="option-bar">
+			<ul>
+				<li><a href="#">返回首页</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+		<h1 class="title">欢迎注册贯众网站</h1>
+		<form class="login-panel register-panel" id="register-form">
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" name="mobile" class="form-control" id="mobile" placeholder="请输入手机号或邮箱">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control" id ="password" placeholder="请输入密码">
+			</div>
+			<p class="note">6～16位，非纯数字，可含数字、字母、特殊符号</p>
+			<div class="pwd-bar" id="pwd-bar">
+			    <span class="red"></span>
+			    <span class="blue"></span>
+			    <span class="green"></span>
+			    <p>弱：试试数字、大小写字母、标点的组合</p>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<input type="text" class="form-control" placeholder="请再次输入密码">
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control input-code" placeholder="请输入验证码">
+				<img src="assets/src/img/code.png" alt="">
+				<a href="#" class="change-code">换一张</a>
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control input-code" placeholder="请输入校验码">
+				<button type="button" class="btn btn-default btn-getCode" data-do="code">免费获取验证码</button>
+			</div>
+			<div class="input-group">
+				<input type="checkbox"><span class="note">我已阅读并同意《中国移动杭州研发中心注册协议》</span>
+			</div>
+			<div class="input-group">
+				<button type="button" class="btn btn-default btn-login">立即注册</button>
+			</div>
+			<div class="input-group">
+				已有账号，<a href="login.html">直接登录</a>
+			</div>
+		</form>
+	</div>
+<script src="dist/register.js"></script>
+</body>
+</html>

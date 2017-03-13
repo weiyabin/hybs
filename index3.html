@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" href="../assets/dep/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/src/less/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../assets/dep/bootstrap-daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="../assets/dep/select2-4.0.3/css/select2.min.css">
+</head>
+<body>
+	<div class="page">	
+		<nav id="header" class="header navbar navbar-fixed-top">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">
+		            <img alt="Brand" src="../assets/src/img/logo.png">
+		        </a>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>    &nbsp张某某</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+		        <li><a href="../login.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+		    </ul>
+		</nav>
+		<div id="content" class="content">
+			<nav id="menu" class="navbar-aside">
+				<div class="sidebar-wrapper">
+					<div class="sidebar-body">
+						<ul class="nav side-nav">
+							<li>
+								<a href="index.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">首页</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="index.html">消息提醒</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index1.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">选项卡</span></a>
+							</li>
+							<li>
+								<a href="index2.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">统计图</span></a>
+							</li>
+							<li>
+								<a href="index3.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表格</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="#">普通表格</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index4.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表单</span></a>
+							</li>
+							<li>
+								<a href="index5.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">弹出框</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="page-panel">
+				<div class="page-panel-inner">
+					<ol class="breadcrumb">
+					    <li><a href="#">用户分析</a></li>
+					    <li class="active">用户类别分析</li>
+					</ol>
+					<div id="table-list" class="container-fluid table-list">
+						<div class="time-select clearfix">
+							<div class="col-sm-4 col-md-4 col-lg-4">
+							  <input type="text" id="time-select" class="form-control">
+							  <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+							</div>	
+						</div>
+						<div class="split-line"></div>
+					    <div class="toolbar toolbar-top">
+					        <div class="pull-left">
+					        	<form class="form-inline form-search">
+					        		
+						        		<div class="form-group">
+						        			<label for="address" class="control-label">地址</label>
+						        			<select name="address" id="" class="form-control">
+						        				<option value="">全部</option>
+						        				<option value="0">杭州市</option>
+						        			</select>
+						        		</div>
+						        		<div class="form-group">
+						        			<label for="title" class="control-label">标题</label>
+						        			<select name="title" id="" class="form-control">
+						        				<option value="">全部</option>
+						        				<option value="0">信息名称一</option>
+						        				<option value="1">信息名称二</option>
+						        			</select>
+						        		</div>
+					        			<div class="form-group"><input type="text" name="keywords" class="form-control" placeholder="请输入名称" maxlength="50"></div>
+						        		<button type="button" class="btn btn-default btn-submit">搜索</button>
+						        		<button type="button" class="btn btn-default btn-reset">重置</button>
+        			        			<br><br>
+        				        		<div class="form-group">
+        				        			<label for="option" class="control-label">选项</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox" checked>
+        			        					<i class="icon icon-input"></i>选项一
+        			        				</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox">
+        			        					<i class="icon icon-input"></i>选项二
+        			        				</label>
+        			        				<label class="label-checkbox checkbox-inline">
+        			        					<input type="checkbox">
+        			        					<i class="icon icon-input"></i>选项三
+        			        				</label>
+        				        		</div>
+					        			<br><br>
+						        		<div class="form-group">
+						        			<label for="option" class="control-label">标题</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" checked value="1" name="labelType">
+					        					<i class="icon icon-input"></i>选项一
+					        				</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" value="2" name="labelType">
+					        					<i class="icon icon-input"></i>选项二
+					        				</label>
+					        				<label class="label-radio radio-inline">
+					        					<input type="radio" value="3" name="labelType">
+					        					<i class="icon icon-input"></i>选项三
+					        				</label>
+						        		</div>
+					        	</form>
+					        </div>
+					        <div class="pull-right"></div>					        
+					    </div>
+					    <div class="split-line"></div>
+					    <table class="table table-bordered table-striped table-data">
+					    	<thead class="column-headers">
+					    	    <tr>
+					    	    	<th class="col-toggle"><label class="label-checkbox"><input type="checkbox" class="toggle-all"><i class="icon icon-input"></i></label></th>
+					    	        <th class="col-id">异常基站编号</th>
+					    	        <th>LAC编号</th>
+					    	        <th>地址</th>
+					    	        <th>公用类型</th>
+					    	        <th class="col-actions">操作</th>
+					    	    </tr>
+					    	</thead>
+					    	<tbody>
+					    		<tr>
+					    			<td><label class="label-checkbox"><input type="checkbox" class="toggle-one"><i class="icon icon-input"></i></label></td>
+					    			<td>NO.334</td>
+					    			<td>1234</td>
+					    			<td>福州市鼓楼区神马路</td>
+					    			<td class="text-ellipsis" data-toggle="tooltip" data-container="body" data-placement="bottom" title="公安用/移动用/高速公路/伪基站">公安用/移动用/高速公路/伪基站</td>
+					    			<td>
+					    				<a href="javascript:void(0);" class="btn-edit"><i class="iconfont icon-edit" title="编辑"></i></a>
+					    				<a href="javascript:void(0);" class="btn-delete"><i class="iconfont icon-close-s-grey" title="删除"></i></a>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td><label class="label-checkbox"><input type="checkbox" class="toggle-one"><i class="icon icon-input"></i></label></td>
+					    			<td>NO.334</td>
+					    			<td>1234</td>
+					    			<td>福州市鼓楼区神马路</td>
+					    			<td class="text-ellipsis" data-toggle="tooltip" data-container="body" data-placement="bottom" title="公安用/移动用/高速公路/伪基站">公安用/移动用/高速公路/伪基站</td>
+					    			<td>
+					    				<a href="javascript:void(0);" class="btn-edit"><i class="iconfont icon-edit" title="编辑"></i></a>
+					    				<a href="javascript:void(0);" class="btn-delete"><i class="iconfont icon-close-s-grey" title="删除"></i></a>
+					    			</td>
+					    		</tr>
+					    		<tr>
+					    			<td><label class="label-checkbox"><input type="checkbox" class="toggle-one"><i class="icon icon-input"></i></label></td>
+					    			<td>NO.334</td>
+					    			<td>1234</td>
+					    			<td>福州市鼓楼区神马路</td>
+					    			<td class="text-ellipsis" data-toggle="tooltip" data-container="body" data-placement="bottom" title="公安用/移动用/高速公路/伪基站">公安用/移动用/高速公路/伪基站</td>
+					    			<td>
+					    				<a href="javascript:void(0);" class="btn-edit"><i class="iconfont icon-edit" title="编辑"></i></a>
+					    				<a href="javascript:void(0);" class="btn-delete"><i class="iconfont icon-close-s-grey" title="删除"></i></a>
+					    			</td>
+					    		</tr>
+					    	</tbody>
+					    </table>
+					    <div class="toolbar toolbar-bottom">
+					    	<div class="tcdPageCode"></div> 
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="dist/index3.js"></script>
+</body>
+</html>

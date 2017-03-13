@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" href="../assets/dep/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/src/less/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../assets/dep/bootstrap-daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="../assets/dep/select2-4.0.3/css/select2.min.css">
+</head>
+<body>
+	<div class="page">	
+
+		<nav id="header" class="header navbar navbar-fixed-top">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" href="#">
+		            <img alt="Brand" src="../assets/src/img/logo.png">
+		        </a>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>    &nbsp张某某</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+		        
+		        <li><a href="../login.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+		    </ul>
+		</nav>
+		<div id="content" class="content">
+			<nav id="menu" class="navbar-aside">
+				<div class="sidebar-wrapper">
+					<div class="sidebar-body">
+						<ul class="nav side-nav">
+							<li>
+								<a href="index.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">首页</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="index.html">消息提醒</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index1.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">选项卡</span></a>
+							</li>
+							<li>
+								<a href="index2.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">统计图</span></a>
+							</li>
+							<li>
+								<a href="index3.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表格</span></a>
+								<div class="nav-mega">
+									<ul class="nav">
+										<li>
+											<a href="#">普通表格</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="index4.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">表单</span></a>
+							</li>
+							<li>
+								<a href="index5.html" class="menu-popup"><i class="nav-icon iconfont basic"></i><span class="nav-label">弹出框</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="page-panel">
+				<div class="page-panel-inner">
+					<ol class="breadcrumb">
+					    <li><a href="#">用户分析</a></li>
+					    <li class="active">用户类别分析</li>
+					</ol>
+					<div id="table-list" class="container-fluid table-list">
+
+					    <h1>一级标题</h1>
+					    <div class="split-line"></div>
+					    <h2>二级标题</h2>
+					    <form action="" class="form-horizontal form-content">
+					    	<div class="form-group">
+					    		<label class="control-label form-label">日期选择</label>			    					
+					    		<input type="text" class="form-control time-input" id="startDate" placeholder="开始时间">&nbsp至	
+	    			    		<input type="text" class="form-control time-input" id="endDate">
+					    	</div>
+					    	<div class="form-group">
+					    		<label class="control-label form-label">输入控件</label>
+					    		<div class="col-sm-8 col-md-8 col-lg-8 form-input">	
+					    			<input type="text" class="form-control" placeholder="请填写XXX">
+					    		</div>			    					
+					    	</div>
+					    	<div class="form-group">
+					    		<label class="control-label form-label">选择控件</label>
+					    		<div class="col-sm-8 col-md-8 col-lg-8 form-input">		
+						    		<select class="js-example-theme-single" style="width: 100%;">
+						    		  <option value="AL">Alabama</option>
+						    		  <option value="AW">Awabama</option>
+						    		  <option value="WY">Wyoming</option>
+						    		  <option value="Wm">WMomingsdfdssfgsfdgdfsgdfg</option>
+						    		</select>
+					    		</div>			    					
+					    	</div>
+					    	<div class="form-group">
+					    		<label class="control-label form-label">复选标题</label>
+					    		<label class="label-checkbox checkbox-inline">
+					    			<input type="checkbox" checked>
+					    			<i class="icon icon-input"></i>选项一
+					    		</label>
+					    		<label class="label-checkbox checkbox-inline">
+					    			<input type="checkbox">
+					    			<i class="icon icon-input"></i>选项二
+					    		</label>
+					    	</div>
+					    	<div class="form-group">
+					    		<div class="col-sm-4 col-md-4 col-lg-4 form-input">	
+					    			<label class="control-label form-label">输入控件</label>
+					    			<input type="text" class="form-control" placeholder="请填写XXX">
+					    		</div>
+					    		<div class="col-sm-4 col-md-4 col-lg-4 form-input">	
+					    			<label class="control-label form-label">选择控件</label>
+					    			<select class="js-example-theme-single" style="width: 100%;">
+						    		  <option value="AL">Alabama</option>
+						    		  <option value="AW">Awabama</option>
+						    		  <option value="WY">Wyoming</option>
+						    		  <option value="Wm">WMomingsdfdssfgsfdgdfsgdfg</option>
+						    		</select>
+					    		</div>
+					    	</div>
+					    </form>
+					    <table class="table-data"></table>
+					    <div class="toolbar toolbar-bottom"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="dist/index4.js"></script>
+</body>
+</html>
