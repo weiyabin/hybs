@@ -44,10 +44,8 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../less/common.less\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	var $ = __webpack_require__(1);
 	var echarts = __webpack_require__(4);
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./nav.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	$(function() {
 		var height = parseInt($(window).height(), 10) - 60;
